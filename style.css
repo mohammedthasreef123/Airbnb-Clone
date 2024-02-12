@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: "Gabarito", sans-serif;
+}
+.container{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid grey 1px;
+    align-items: center;
+
+}
+.navbar__img img{
+    height: 50px;
+    width: 120px;
+    margin-left: 30px;
+}
+.navbar__center{
+    display: flex;
+    margin-top: 5px;
+    margin-left: 450px;
+    border: solid black 1px;
+    border-radius: 30px;
+    gap: 20px;
+    padding: 2px;
+}
+.navbar__center p{
+    margin-top: 5px;
+}
+.search-icon{
+    margin-top: 5px;
+}
+.navbar__desc{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.navbar__icons1{
+    margin-top: 10px;
+}
+.navbar__icons2{
+    margin-top: 10px;
+}
+.top-icons{
+   display: flex;
+   margin-left: 40px;
+   margin-top: 10px;
+   justify-content: space-around;
+}
+.top-icons1 {
+    text-align: center;
+}
+.top-icons1 i{
+    display: inline;
+}
+.main-section{
+    display: grid;
+    margin: 50px; 
+    gap: 100px;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.main-section__content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+@keyframes zoom{
+        0%{
+            transform: scale(0);
+            opacity: 0;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+button{
+    position: sticky;
+    align-items: center;
+    bottom: 50px;
+    left: 45%;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    animation-name: zoom2;
+    animation-duration: 1s;
+}
+@keyframes zoom2{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}  
+.bottom-section{
+    border-bottom: solid grey 1px;
+    padding-bottom: 10px;
+
+}
+.bottom-section h4{
+    margin-top: 30px;
+    margin-left: 40%;
+}
+.bottom-section button{
+    margin-top: 30px;
+    right: 50px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    border-bottom: solid grey 1px;
+    align-items: center;
+}
+.footer h4{
+    margin: 10px;
+    padding: 10px;
+}
+.footer p{
+    padding:10px;
+}
+.footer-last{
+    display: flex;
+    margin: 30px;
+    gap: 30px;
+    margin-left: 100px;
+}
+.footer-last a{
+    text-decoration: none;
+}
+.footer-last__corner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-left: 900px;
+    padding: 20px;
+    gap: 10px;
+}
+button:hover{
+    color: red;
+}
+.top-icons1:hover{
+    color: red;
+}
+@media screen and (max-width:800px){
+    .navbar{
+        display: none;
+    }
+    
+}
